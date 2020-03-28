@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Белоконь](https://up.htmlacademy.ru/adaptive/19/user/17826).
-* Наставник: [Олег Сороки](https://htmlacademy.ru/profile/osorokin).
+* Наставник: [Олег Сорокин](https://htmlacademy.ru/profile/osorokin).
 
 ---
 
