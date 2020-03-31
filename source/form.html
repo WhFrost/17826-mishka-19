@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мишка: Каталог товаров</title>
+</head>
+
+<body class="page">
+  <header class="page__header header">
+    <nav class="header__nav header-menu">
+      <a href="index.html" class="header__logo">
+        <img src="https://via.placeholder.com/86x35" alt="HTML Academy: Мишка" class="header__image logo" width="86"
+          height="35">
+      </a>
+      <button class="header__toggle">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
+      <ul class="header__list main-menu-list">
+        <li class="header__item main-menu-item">
+          <a href="catalog.html" class="header__link main-menu-link">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="header__item main-menu-item">
+          <a href="form.html" class="header__link main-menu-link">
+            Вязание на заказ
+          </a>
+        </li>
+      </ul>
+      <ul class="header-list user-menu-list">
+        <li class="header__item-icon main-menu-item">
+          <a href="#" class="header__link header__link--search user-menu-link">
+            Поиск по сайту
+          </a>
+        </li>
+        <li class="header__item-icon main-menu-item">
+          <a href="#" class="header__link header__link--cart user-menu-link">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="header__title">
+      <h1 class="header__title">
+        Вязание на заказ
+      </h1>
+    </section>
+  </header>
+
+  <main class="page-main order">
+    <p class="order__content">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+      уточнить детали.
+    </p>
+    <form action="https://echo.htmlacademy.ru" method="post" class="order__form form">
+      <fieldset class="form__type">
+        <legend class="form__title">
+          Тип
+        </legend>
+        <label class="form__radio-name">
+          <input type="radio" name="type" value="accessory" class="form__radio" checked>
+          Аксессуар для интерьера
+        </label>
+        <label class="form__radio-name">
+          <input type="radio" name="type" value="toy" class="form__radio">
+          Детская игрушка
+        </label>
+      </fieldset>
+      <fieldset class="form__color">
+        <legend class="form__title">
+          Цвет
+        </legend>
+        <label class="form__checkbox-name">
+          <input type="checkbox" name="white" class="form__checkbox" checked>
+          Белый
+        </label>
+        <label class="form__checkbox-name">
+          <input type="checkbox" name="gray" class="form__checkbox" checked>
+          Серый
+        </label>
+        <label class="form__checkbox-name">
+          <input type="checkbox" name="tiffani" class="form__checkbox">
+          «Тиффани»
+        </label>
+        <label class="form__checkbox-name">
+          <input type="checkbox" name="black" class="form__checkbox">
+          Черный
+        </label>
+        <label class="form__checkbox-name">
+          <input type="checkbox" name="pink" class="form__checkbox">
+          Розовый
+        </label>
+        <label class="form__checkbox-name">
+          <input type="checkbox" name="orange" class="form__checkbox">
+          Оранжевый
+        </label>
+      </fieldset>
+      <fieldset class="form__user">
+        <legend class="form__title">
+          ФИО
+        </legend>
+        <label class="form__text-name">
+          <input type="text" class="form__text" placeholder="Введите ваше имя*" required>
+          Имя:
+        </label>
+        <label class="form__text-name">
+          <input type="text" class="form__text" placeholder="Укажите фамилию*" required>
+          Имя:
+        </label>
+        <label class="form__text-name">
+          <input type="text" class="form__text" placeholder="Отчество, если желаете">
+          Имя:
+        </label>
+      </fieldset>
+      <fieldset class="form__user-phone">
+        <legend class="form__title">
+          Тел
+        </legend>
+        <label class="form__text-name">
+          <input type="phone" class="form__text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        </label>
+      </fieldset>
+      <fieldset class="form__user-email">
+        <legend class="form__title">
+          E-mail
+        </legend>
+        <label class="form__text-name">
+          <input type="email" class="form__text" placeholder="Ваш Email*" required>
+        </label>
+      </fieldset>
+      <fieldset class="form__user-email">
+        <legend class="form__title">
+          Доп
+        </legend>
+        <label class="form__text-name">
+          <textarea name="user-text" id="user-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </label>
+      </fieldset>
+      <p class="form__info">
+        *Поля обязательны для заполнения
+      </p>
+      <button type="submit" class="form__button">
+        ОТПРАВИТЬ ЗАКАЗ
+      </button>
+    </form>
+  </main>
+
+  <footer class="page__footer footer">
+    <ul class="footer__social-list social-list">
+      <li class="footer__social-item social-item">
+        <a href="#" class="footer__social-link social-link" aria-label="Istagram">
+          <img src="https://via.placeholder.com/22x21" alt="Istagram" class="footer__social-link-instagram" width="22"
+            height="21">
+        </a>
+      </li>
+      <li class="footer__social-item social-item">
+        <a href="#" class="footer__social-link social-link" aria-label="Facebook">
+          <img src="https://via.placeholder.com/22x21" alt="Facebook" class="footer__social-link-facebook" width="22"
+            height="21">
+        </a>
+      </li>
+      <li class="footer__social-item social-item">
+        <a href="#" class="footer__social-link social-link" aria-label="Twitter">
+          <img src="https://via.placeholder.com/22x21" alt="Twitter" class="footer__social-link-twitter" width="22"
+            height="21">
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copyright copyright">
+      <a href="" class="copyright__link">
+        <strong class="copyright__title">Разработано</strong>
+        <img src="https://via.placeholder.com/27x34" alt="HtmlAcademy" class="copyright__image" width="27" height="34">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
