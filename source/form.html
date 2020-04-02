@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,34 +9,34 @@
 
 <body class="page">
   <header class="page__header header">
-    <nav class="header__nav header-menu">
-      <a href="index.html" class="header__logo">
-        <img src="https://via.placeholder.com/86x35" alt="HTML Academy: Мишка" class="header__image logo" width="86"
+    <nav class="header__nav main-menu">
+      <a href="index.html" class="main-menu__logo">
+        <img src="https://via.placeholder.com/86x35" alt="HTML Academy: Мишка" class="main-menu__image logo" width="86"
           height="35">
       </a>
-      <button class="header__toggle">
+      <button class="main-menu__toggle">
         <span class="visually-hidden">Показать меню</span>
       </button>
-      <ul class="header__list main-menu-list">
-        <li class="header__item main-menu-item">
-          <a href="catalog.html" class="header__link main-menu-link">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="catalog.html" class="main-menu__link">
             Каталог товаров
           </a>
         </li>
-        <li class="header__item main-menu-item">
-          <a href="form.html" class="header__link main-menu-link">
+        <li class="main-menu__item">
+          <a href="form.html" class="main-menu__link">
             Вязание на заказ
           </a>
         </li>
       </ul>
-      <ul class="header-list user-menu-list">
-        <li class="header__item-icon main-menu-item">
-          <a href="#" class="header__link header__link--search user-menu-link">
+      <ul class="main-menu-list user-menu-list">
+        <li class="main-menu__item-icon">
+          <a href="#" class="header__link main-menu__link--search">
             Поиск по сайту
           </a>
         </li>
-        <li class="header__item-icon main-menu-item">
-          <a href="#" class="header__link header__link--cart user-menu-link">
+        <li class="main-menu__item-icon">
+          <a href="#" class="main-menu__link main-menu__link--cart">
             Корзина: пока пуста
           </a>
         </li>
@@ -55,7 +55,7 @@
       уточнить детали.
     </p>
     <form action="https://echo.htmlacademy.ru" method="post" class="order__form form">
-      <fieldset class="form__type">
+      <fieldset class="form__group">
         <legend class="form__title">
           Тип
         </legend>
@@ -68,7 +68,7 @@
           Детская игрушка
         </label>
       </fieldset>
-      <fieldset class="form__color">
+      <fieldset class="form__group">
         <legend class="form__title">
           Цвет
         </legend>
@@ -97,7 +97,7 @@
           Оранжевый
         </label>
       </fieldset>
-      <fieldset class="form__user">
+      <fieldset class="form__group">
         <legend class="form__title">
           ФИО
         </legend>
@@ -114,15 +114,15 @@
           Имя:
         </label>
       </fieldset>
-      <fieldset class="form__user-phone">
+      <fieldset class="form__group">
         <legend class="form__title">
           Тел
         </legend>
         <label class="form__text-name">
-          <input type="phone" class="form__text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <input type="tel" class="form__text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
         </label>
       </fieldset>
-      <fieldset class="form__user-email">
+      <fieldset class="form__group">
         <legend class="form__title">
           E-mail
         </legend>
@@ -130,46 +130,47 @@
           <input type="email" class="form__text" placeholder="Ваш Email*" required>
         </label>
       </fieldset>
-      <fieldset class="form__user-email">
+      <fieldset class="form__group">
         <legend class="form__title">
           Доп
         </legend>
         <label class="form__text-name">
-          <textarea name="user-text" id="user-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea name="user-text" id="user-text" cols="30" rows="10"
+            placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
       </fieldset>
       <p class="form__info">
         *Поля обязательны для заполнения
       </p>
-      <button type="submit" class="form__button">
+      <button type="submit" class="form__button button">
         ОТПРАВИТЬ ЗАКАЗ
       </button>
     </form>
   </main>
 
   <footer class="page__footer footer">
-    <ul class="footer__social-list social-list">
-      <li class="footer__social-item social-item">
-        <a href="#" class="footer__social-link social-link" aria-label="Istagram">
-          <img src="https://via.placeholder.com/22x21" alt="Istagram" class="footer__social-link-instagram" width="22"
+    <ul class="footer__social social-list">
+      <li class="social-list__item">
+        <a href="#" class="social-list__link" aria-label="Istagram">
+          <img src="https://via.placeholder.com/22x21" alt="Istagram" class="social-list__image--instagram" width="22"
             height="21">
         </a>
       </li>
-      <li class="footer__social-item social-item">
-        <a href="#" class="footer__social-link social-link" aria-label="Facebook">
-          <img src="https://via.placeholder.com/22x21" alt="Facebook" class="footer__social-link-facebook" width="22"
+      <li class="social-list__item">
+        <a href="#" class="social-list__link" aria-label="Facebook">
+          <img src="https://via.placeholder.com/22x21" alt="Facebook" class="social-list__image--facebook" width="22"
             height="21">
         </a>
       </li>
-      <li class="footer__social-item social-item">
-        <a href="#" class="footer__social-link social-link" aria-label="Twitter">
-          <img src="https://via.placeholder.com/22x21" alt="Twitter" class="footer__social-link-twitter" width="22"
+      <li class="social-list__item">
+        <a href="#" class="social-list__link" aria-label="Twitter">
+          <img src="https://via.placeholder.com/22x21" alt="Twitter" class="social-list__image--twitter" width="22"
             height="21">
         </a>
       </li>
     </ul>
     <div class="footer__copyright copyright">
-      <a href="" class="copyright__link">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
         <strong class="copyright__title">Разработано</strong>
         <img src="https://via.placeholder.com/27x34" alt="HtmlAcademy" class="copyright__image" width="27" height="34">
       </a>
