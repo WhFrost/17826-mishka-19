@@ -1,0 +1,123 @@
+.top-product {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  @include container;
+}
+
+/*
+.top-product::after {
+  content: "";
+  position: absolute;
+  bottom: -36px;
+
+  width: auto;
+  height: 6px;
+
+  background-image: url("./img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+}
+*/
+
+.top-product__title {
+  width: 100%;
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: $font-size-h2;
+  line-height: 30px;
+  font-family: $font-family;
+  text-align: left;
+  color: $black;
+}
+
+.top-product__tag {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: 20px;
+  font-family: $font-family;
+  color: $seafoam;
+}
+
+.top-product__content {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: $font-size-base;
+  line-height: 24px;
+  font-family: $font-family;
+  color: $greyish;
+}
+
+.top-product__features {
+  display: flex;
+  width: 100%;
+  margin-bottom: 28px;
+
+  border-collapse: collapse;
+  font-weight: 400;
+  font-size: $font-size-base;
+  line-height: 20px;
+  font-family: $font-family;
+  color: $greyish;
+}
+
+.top-product__row {
+  border-bottom: 1px solid $grey-border;
+}
+
+.top-product__key,
+.top-product__value {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  vertical-align: top;
+}
+
+.top-product__key {
+  padding-right: 0;
+}
+.top-product__value {
+  padding-left: 0;
+}
+
+.top-product__image {
+  display: block;
+  height: auto;
+  margin-bottom: 29px;
+}
+
+.top-product__cost {
+  width: 100%;
+  margin-bottom: 28px;
+
+  font-weight: 700;
+  font-size: $font-size-big;
+  line-height: 24px;
+  font-family: $font-family;
+  text-align: center;
+  color: $greyish;
+}
+
+.top-product__link {
+  padding: 16px 81px;
+
+  font-weight: 700;
+  font-size: $font-size-big;
+  line-height: 20px;
+  font-family: $font-family;
+  text-align: center;
+  color: $greyish;
+  text-decoration: none;
+
+  border: 2px solid $greyish;
+}

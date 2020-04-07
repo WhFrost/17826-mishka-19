@@ -1,0 +1,45 @@
+.about {
+  font-family: $font-family;
+  text-align: left;
+  color: $black;
+
+  @include container;
+}
+
+.about__title {
+  width: 100%;
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 31px;
+
+  font-weight: 700;
+  font-size: $font-size-h2;
+  line-height: 30px;
+  font-family: $font-family;
+  text-align: left;
+  color: $black;
+}
+
+.about__list {
+  position: relative;
+
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: 20px;
+
+  @include list;
+}
+
+.about__item {
+  position: relative;
+
+  margin-top: 86px;
+}
+
+.about__icon {
+  position: absolute;
+  top: -56px;
+  path {
+    fill: $seafoam;
+  }
+}

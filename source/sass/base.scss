@@ -1,0 +1,56 @@
+.page {
+  position: relative;
+
+  min-width: 320px;
+
+  font-size: $font-size-base;
+  font-family: $font-family;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+          clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
+}
+
+.button {
+  box-sizing: border-box;
+
+  font-weight: 700;
+  font-size: $font-size-big;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $font-family;
+  text-align: center;
+  color: $greyish;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 2px solid $greyish;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $greyish;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+
+    background-color: $greyish;
+  }
+}

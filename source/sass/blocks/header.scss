@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  margin-top: 22px;
+  margin-right: auto;
+  margin-bottom: 22px;
+  margin-left: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    margin-top: 9px;
+    margin-bottom: 7px;
+  }
+}

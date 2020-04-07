@@ -1,0 +1,30 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 1px solid $grey-border;
+
+  @include list;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-list__item {
+  margin-bottom: 25px;
+}
+
+.social-list__icon {
+  &:hover,
+  &:focus {
+    path {
+      fill: $link-hover;
+    }
+  }
+  &:active {
+    path {
+      fill: rgba($link-hover, 0.3);
+    }
+  }
+}
