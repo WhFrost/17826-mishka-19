@@ -16,3 +16,24 @@
     margin-bottom: 7px;
   }
 }
+
+.header__wrapper {
+  margin-bottom: 30px;
+  padding-top: 76px;
+  padding-bottom: 74px;
+
+  background-color: $bg-white;
+}
+
+.header__title {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 700;
+  font-size: $font-size-h1;
+  line-height: 30px;
+  font-family: $font-family;
+  text-align: center;
+  color: $black;
+}

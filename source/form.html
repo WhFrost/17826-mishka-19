@@ -57,7 +57,7 @@
         </ul>
       </div>
     </nav>
-    <section class="header__title">
+    <section class="header__wrapper">
       <h1 class="header__title">
         Вязание на заказ
       </h1>
@@ -75,11 +75,13 @@
           Тип
         </legend>
         <label class="form__radio-name">
-          <input type="radio" name="type" value="accessory" class="form__radio" checked>
+          <input type="radio" name="type" value="accessory" class="form__radio visually-hidden" checked>
+          <span class="form__radio-indicator"></span>
           Аксессуар для интерьера
         </label>
         <label class="form__radio-name">
-          <input type="radio" name="type" value="toy" class="form__radio">
+          <input type="radio" name="type" value="toy" class="form__radio visually-hidden">
+          <span class="form__radio-indicator"></span>
           Детская игрушка
         </label>
       </fieldset>
@@ -88,27 +90,33 @@
           Цвет
         </legend>
         <label class="form__checkbox-name">
-          <input type="checkbox" name="white" class="form__checkbox" checked>
+          <input type="checkbox" name="white" class="form__checkbox visually-hidden" checked>
+          <span class="form__checkbox-indicator"></span>
           Белый
         </label>
         <label class="form__checkbox-name">
-          <input type="checkbox" name="gray" class="form__checkbox" checked>
+          <input type="checkbox" name="gray" class="form__checkbox visually-hidden" checked>
+          <span class="form__checkbox-indicator"></span>
           Серый
         </label>
         <label class="form__checkbox-name">
-          <input type="checkbox" name="tiffani" class="form__checkbox">
+          <input type="checkbox" name="tiffani" class="form__checkbox visually-hidden">
+          <span class="form__checkbox-indicator"></span>
           «Тиффани»
         </label>
         <label class="form__checkbox-name">
-          <input type="checkbox" name="black" class="form__checkbox">
+          <input type="checkbox" name="black" class="form__checkbox visually-hidden">
+          <span class="form__checkbox-indicator"></span>
           Черный
         </label>
         <label class="form__checkbox-name">
-          <input type="checkbox" name="pink" class="form__checkbox">
+          <input type="checkbox" name="pink" class="form__checkbox visually-hidden">
+          <span class="form__checkbox-indicator"></span>
           Розовый
         </label>
         <label class="form__checkbox-name">
-          <input type="checkbox" name="orange" class="form__checkbox">
+          <input type="checkbox" name="orange" class="form__checkbox visually-hidden">
+          <span class="form__checkbox-indicator"></span>
           Оранжевый
         </label>
       </fieldset>
@@ -117,16 +125,16 @@
           ФИО
         </legend>
         <label class="form__text-name">
+          Имя:
           <input type="text" class="form__text" placeholder="Введите ваше имя*" required>
-          Имя:
         </label>
         <label class="form__text-name">
+          Фамилия
           <input type="text" class="form__text" placeholder="Укажите фамилию*" required>
-          Имя:
         </label>
         <label class="form__text-name">
+          Отчество
           <input type="text" class="form__text" placeholder="Отчество, если желаете">
-          Имя:
         </label>
       </fieldset>
       <fieldset class="form__group">
@@ -150,11 +158,11 @@
           Доп
         </legend>
         <label class="form__text-name">
-          <textarea name="user-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form__user-text" name="user-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
       </fieldset>
       <p class="form__info">
-        *Поля обязательны для заполнения
+        <sup>*</sup>Поля обязательны для заполнения
       </p>
       <button type="submit" class="form__button button">
         ОТПРАВИТЬ ЗАКАЗ

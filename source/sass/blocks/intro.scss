@@ -34,6 +34,8 @@
   min-height: 103px;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @include container;
 }
 
 .intro__item:first-child {
@@ -45,10 +47,16 @@
 }
 
 .intro__link {
-  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   color: $white;
   text-decoration: none;
+}
+
+.intro__content {
+  margin: 0;
 }
 
 .intro__icon {

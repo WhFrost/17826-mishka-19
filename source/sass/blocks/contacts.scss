@@ -32,12 +32,11 @@
 
 .contacts__item {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .contacts__text {
   margin: 0;
-  margin-right: 32px;
 }
 
 .contacts__link {
@@ -67,6 +66,11 @@
   margin-right: -30px;
   margin-bottom: 39px;
   margin-left: -30px;
+}
+
+.contacts__image {
+  width: 100%;
+  height: auto;
 }
 
 .contacts__button {

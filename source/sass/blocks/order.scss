@@ -1,0 +1,14 @@
+.order {
+  font-family: $font-family;
+
+  @include container;
+}
+
+.order__content {
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: $font-size-small;
+  line-height: 24px;
+  color: $greyish;
+}
