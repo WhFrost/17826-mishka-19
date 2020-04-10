@@ -59,13 +59,16 @@
 .user-menu__link--search:focus .user-menu__icon,
 .user-menu__link--cart:focus .user-menu__icon {
   opacity: 1;
+
   path {
     fill: $seafoam;
   }
 }
+
 .user-menu__link--search:active .user-menu__icon,
 .user-menu__link--cart:active .user-menu__icon {
   opacity: 0.3;
+
   path {
     fill: $seafoam;
   }

@@ -35,6 +35,7 @@
   &:hover {
     box-shadow: 0 6px 10px 0 $black;
   }
+
   &:active {
     box-shadow: 0 3px 5px 0 $black;
   }
@@ -69,7 +70,7 @@
   line-height: 30px;
   color: $greyish;
 
-  border-bottom: 1px solid $grey-border;;
+  border-bottom: 1px solid $grey-border;
 }
 
 .catalog__cost-wrapper {
@@ -93,9 +94,11 @@
   margin-right: 27px;
 
   opacity: 0.2;
+
   &:hover,
   &:focus {
     opacity: 1;
+
     path {
       fill: $seafoam;
     }

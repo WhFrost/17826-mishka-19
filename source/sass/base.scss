@@ -21,17 +21,13 @@
   border: 0;
 
   clip: rect(0 0 0 0);
-          clip-path: inset(100%);
-
-  -webkit-clip-path: inset(100%);
 }
 
 .button {
   box-sizing: border-box;
 
   font-weight: 700;
-  font-size: $font-size-big;
-  font-size: 18px;
+  font-size: $font-size-medium;
   line-height: 20px;
   font-family: $font-family;
   text-align: center;

@@ -60,7 +60,7 @@
 
 .form__radio-indicator:active,
 .form__radio-name:active .form__radio-indicator {
-  border-color: rgba($greyish, 0.3) ;
+  border-color: rgba($greyish, 0.3);
 }
 
 .form__radio:checked + .form__radio-indicator::before {
@@ -108,6 +108,7 @@
   background-color: $black;
   transform: rotate(45deg);
 }
+
 .form__checkbox:checked + .form__checkbox-indicator::after {
   content: "";
   position: absolute;
@@ -130,7 +131,7 @@
 
 .form__checkbox-indicator:active,
 .form__checkbox-name:active .form__checkbox-indicator {
-  border-color: rgba($greyish, 0.3) ;
+  border-color: rgba($greyish, 0.3);
 }
 
 .form__text-name {
