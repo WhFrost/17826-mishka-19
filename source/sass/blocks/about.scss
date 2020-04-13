@@ -1,8 +1,4 @@
 .about {
-  font-family: $font-family;
-  text-align: left;
-  color: $black;
-
   @include container;
 }
 
@@ -15,9 +11,6 @@
   font-weight: 700;
   font-size: $font-size-h2;
   line-height: 30px;
-  font-family: $font-family;
-  text-align: left;
-  color: $black;
 }
 
 .about__list {

@@ -1,10 +1,6 @@
 .reviews {
   margin-bottom: 45px;
 
-  font-family: $font-family;
-  text-align: left;
-  color: $black;
-
   @include container;
 }
 
@@ -29,9 +25,6 @@
   font-weight: 700;
   font-size: $font-size-h2;
   line-height: 30px;
-  font-family: $font-family;
-  text-align: left;
-  color: $black;
 }
 
 .reviews__item {
@@ -45,9 +38,7 @@
   margin-bottom: 40px;
 
   font-weight: 400;
-  font-size: $font-size-base;
   line-height: 30px;
-  text-align: left;
   color: $greyish;
 }
 
@@ -57,14 +48,12 @@
   font-weight: 700;
   font-size: $font-size-medium;
   line-height: 24px;
-  color: $black;
 }
 
 .reviews__nickname {
   font-weight: 400;
   font-size: $font-size-base;
   line-height: 30px;
-  text-align: left;
   color: $greyish;
 }
 

@@ -1,7 +1,4 @@
 .catalog {
-  font-family: $font-family;
-  color: $black;
-
   @include container;
 }
 
@@ -15,8 +12,6 @@
   font-weight: 700;
   font-size: $font-size-medium;
   line-height: 24px;
-  color: $black;
-  text-decoration: none;
 }
 
 .catalog__image {

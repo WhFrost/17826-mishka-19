@@ -1,7 +1,6 @@
 .production {
   margin-bottom: 58px;
 
-  font-family: $font-family;
   color: $greyish;
 
   @include container;
@@ -28,7 +27,6 @@
   font-weight: 700;
   font-size: $font-size-medium;
   line-height: 24px;
-  color: $black;
 }
 
 .production__icon {

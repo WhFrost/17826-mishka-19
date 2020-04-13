@@ -1,10 +1,14 @@
-.page {
-  position: relative;
-
+html {
   min-width: 320px;
 
   font-size: $font-size-base;
   font-family: $font-family;
+  color: $black;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -21,32 +25,4 @@
   border: 0;
 
   clip: rect(0 0 0 0);
-}
-
-.button {
-  box-sizing: border-box;
-
-  font-weight: 700;
-  font-size: $font-size-medium;
-  line-height: 20px;
-  font-family: $font-family;
-  text-align: center;
-  color: $greyish;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  border: 2px solid $greyish;
-
-  &:hover,
-  &:focus {
-    color: $white;
-
-    background-color: $greyish;
-  }
-
-  &:active {
-    color: rgba($white, 0.3);
-
-    background-color: $greyish;
-  }
 }

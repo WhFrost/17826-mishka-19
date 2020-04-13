@@ -30,9 +30,6 @@
   font-weight: 700;
   font-size: $font-size-h2;
   line-height: 30px;
-  font-family: $font-family;
-  text-align: left;
-  color: $black;
 }
 
 .top-product__tag {
@@ -42,7 +39,6 @@
   font-weight: 700;
   font-size: $font-size-medium;
   line-height: 20px;
-  font-family: $font-family;
   color: $seafoam;
 }
 
@@ -53,7 +49,6 @@
   font-weight: 400;
   font-size: $font-size-base;
   line-height: 24px;
-  font-family: $font-family;
   color: $greyish;
 }
 
@@ -65,7 +60,6 @@
   font-weight: 400;
   font-size: $font-size-base;
   line-height: 20px;
-  font-family: $font-family;
   color: $greyish;
 }
 
@@ -112,7 +106,6 @@
   font-weight: 700;
   font-size: $font-size-big;
   line-height: 24px;
-  font-family: $font-family;
   text-align: center;
   color: $greyish;
 }
@@ -124,10 +117,8 @@
   font-weight: 700;
   font-size: $font-size-big;
   line-height: 20px;
-  font-family: $font-family;
   text-align: center;
   color: $greyish;
-  text-decoration: none;
 
   border: 2px solid $greyish;
 }

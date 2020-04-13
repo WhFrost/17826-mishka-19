@@ -1,10 +1,6 @@
 .contacts {
   padding-top: 44px;
 
-  font-family: $font-family;
-  text-align: left;
-  color: $black;
-
   @include container;
 }
 
@@ -23,7 +19,6 @@
   margin-bottom: 42px;
 
   font-weight: 400;
-  font-size: $font-size-base;
   line-height: 30px;
   color: $greyish;
 
@@ -43,10 +38,8 @@
   display: block;
 
   font-weight: 400;
-  font-size: $font-size-base;
   line-height: 30px;
   color: $greyish;
-  text-decoration: none;
 
   border-bottom: 1px solid $link-hover;
 
