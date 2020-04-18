@@ -1,7 +1,6 @@
 .contacts {
   padding-top: 44px;
-
-  @include container;
+  padding-bottom: 39px;
 }
 
 .contacts__title {
@@ -10,19 +9,20 @@
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.6;
 }
 
 .contacts__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 42px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 42px;
 
+  list-style: none;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 2;
   color: $greyish;
-
-  @include list;
 }
 
 .contacts__item {
@@ -31,28 +31,8 @@
 }
 
 .contacts__text {
+  width: 50%;
   margin: 0;
-}
-
-.contacts__link {
-  display: block;
-
-  font-weight: 400;
-  line-height: 30px;
-  color: $greyish;
-
-  border-bottom: 1px solid $link-hover;
-
-  &:hover,
-  &:focus {
-    color: $link-hover;
-  }
-
-  &:active {
-    color: rgba($link-hover, 0.3);
-
-    border-bottom: 1px solid rgba($link-hover, 0.3);
-  }
 }
 
 .contacts__map {
@@ -68,6 +48,5 @@
 
 .contacts__button {
   display: block;
-  margin-bottom: 39px;
   padding: 20px 49px;
 }

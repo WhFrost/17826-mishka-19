@@ -1,7 +1,5 @@
 .order {
   font-family: $font-family;
-
-  @include container;
 }
 
 .order__content {
@@ -9,6 +7,6 @@
 
   font-weight: 400;
   font-size: $font-size-small;
-  line-height: 24px;
+  line-height: 1.9;
   color: $greyish;
 }

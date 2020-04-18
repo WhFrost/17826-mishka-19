@@ -18,7 +18,9 @@
 }
 
 .header__wrapper {
+  margin-right: -30px;
   margin-bottom: 30px;
+  margin-left: -30px;
   padding-top: 76px;
   padding-bottom: 74px;
 
@@ -32,6 +34,6 @@
 
   font-weight: 700;
   font-size: $font-size-h1;
-  line-height: 30px;
+  line-height: 1.1;
   text-align: center;
 }

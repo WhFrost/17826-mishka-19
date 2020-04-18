@@ -2,11 +2,12 @@
   margin-bottom: 58px;
 
   color: $greyish;
-
-  @include container;
 }
 
 .production__wrapper {
+  padding-top: 29px;
+  padding-bottom: 33px;
+
   border: 1px solid $grey-border;
 
   &:hover {
@@ -20,18 +21,21 @@
 
 .production__title {
   display: flex;
+  align-items: center;
   margin: 0;
+  margin-right: 43px;
   margin-bottom: 26px;
   margin-left: 34px;
 
   font-weight: 700;
   font-size: $font-size-medium;
-  line-height: 24px;
+  line-height: 1.4;
 }
 
 .production__icon {
+  flex-shrink: 0;
   width: 32px;
-  height: 22px;
+  height: 32px;
   margin-right: 25px;
 
   path {
@@ -67,18 +71,20 @@
 }
 
 .production__content {
+  padding-top: 34px;
+  padding-right: 34px;
+  padding-left: 34px;
+}
+
+.production__text {
+  margin: 0;
   margin-bottom: 28px;
-  margin-left: 34px;
 
   font-weight: 400;
   font-size: $font-size-small;
-  line-height: 24px;
+  line-height: 1.9;
 }
 
 .production__link {
-  display: block;
-  margin-right: 34px;
-  margin-bottom: 33px;
-  margin-left: 34px;
   padding: 18px 19px;
 }
