@@ -31,8 +31,11 @@
 }
 
 .contacts__text {
-  width: 50%;
   margin: 0;
+}
+
+.contacts__text:last-child {
+  width: 70%;
 }
 
 .contacts__map {

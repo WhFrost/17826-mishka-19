@@ -71,6 +71,9 @@
 
 .main-menu__wrapper {
   position: relative;
+
+  margin-right: -30px;
+  margin-left: -30px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -99,6 +102,10 @@
 
   background-color: $white;
   border-bottom: 1px solid $grey-border;
+}
+
+.main-menu__item:first-child {
+  border-top: 1px solid $grey-border;
 }
 
 .main-menu__link {
