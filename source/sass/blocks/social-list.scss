@@ -1,0 +1,31 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+
+  list-style: none;
+
+  border-bottom: 1px solid $grey-border;
+}
+
+.social-list__item {
+  margin: 0 20px;
+}
+
+.social-list__icon {
+  &:hover,
+  &:focus {
+    path {
+      fill: $link-hover;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba($link-hover, 0.3);
+    }
+  }
+}

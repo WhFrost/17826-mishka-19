@@ -1,0 +1,37 @@
+.copyright {
+  margin-top: 28px;
+  margin-bottom: 31px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: $font-size-big;
+  line-height: 1;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  path {
+    fill: $link-hover;
+  }
+}
+
+.copyright__title {
+  margin-right: 30px;
+}
+
+.copyright__icon {
+  position: relative;
+  top: -6px;
+
+  path {
+    fill: $seafoam;
+  }
+}

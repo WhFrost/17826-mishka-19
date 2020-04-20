@@ -1,0 +1,18 @@
+.link {
+  font-weight: 400;
+  line-height: 2;
+  color: $greyish;
+
+  border-bottom: 1px solid $link-hover;
+
+  &:hover,
+  &:focus {
+    color: $link-hover;
+  }
+
+  &:active {
+    color: rgba($link-hover, 0.3);
+
+    border-bottom: 1px solid rgba($link-hover, 0.3);
+  }
+}

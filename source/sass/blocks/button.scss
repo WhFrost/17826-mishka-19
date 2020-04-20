@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: 1.2;
+  text-align: center;
+  color: $greyish;
+  text-transform: uppercase;
+
+  border: 2px solid $greyish;
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $greyish;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+
+    background-color: $greyish;
+  }
+}

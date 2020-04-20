@@ -1,0 +1,99 @@
+.intro__wrapper {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.intro__title-wrapper {
+  min-height: 283px;
+  padding-top: 76px;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.intro__title {
+  margin: 0 39px;
+
+  font-weight: 700;
+  font-size: $font-size-h1;
+  text-align: center;
+}
+
+.intro__list {
+  font-weight: 700;
+  font-size: $font-size-big;
+  line-height: 1.25;
+
+  @include list;
+}
+
+.intro__item {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 103px;
+}
+
+.intro__item:first-child {
+  background-color: $seafoam;
+}
+
+.intro__item:last-child {
+  background-color: $greeny;
+}
+
+.intro__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+
+  color: $white;
+}
+
+.intro__icon {
+  margin-left: 15px;
+
+  opacity: 0.5;
+
+  path {
+    fill: #149080;
+  }
+}
+
+.intro__item:first-child:hover,
+.intro__item:first-child:focus {
+  background-color: #59d5bc;
+}
+
+.intro__item:last-child:hover,
+.intro__item:last-child:focus {
+  background-color: #46c1ae;
+}
+
+.intro__item:hover .intro__link,
+.intro__item:focus .intro__link {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.intro__item:hover .intro__icon,
+.intro__item:focus .intro__icon {
+  opacity: 0.7;
+}
+
+.intro__link:active {
+  color: rgba($white, 0.3);
+
+  path {
+    opacity: 0.3;
+  }
+}
+
+.intro__content {
+  max-width: 50%;
+  margin: 0;
+}
