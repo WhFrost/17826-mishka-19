@@ -9,6 +9,12 @@
   list-style: none;
 
   border-bottom: 1px solid $grey-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .social-list__item {

@@ -2,15 +2,31 @@
   padding-bottom: 55px;
 
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+  }
 }
 
 .form__group {
-  display: flex;
   margin: 0;
   padding: 0;
 
   border: none;
   border-top: 1px solid $seafoam;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+  }
+}
+
+.form__group:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    background-color: $bg-white;
+  }
 }
 
 .form__title {

@@ -5,6 +5,11 @@
   margin-left: auto;
   padding-right: $padding;
   padding-left: $padding;
+
+  @media (min-width: $tablet-width) {
+    padding-right: $padding + 22px;
+    padding-left: $padding + 22px;
+  }
 }
 
 @mixin list {

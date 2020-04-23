@@ -1,11 +1,16 @@
 .copyright {
   margin-top: 28px;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .copyright__link {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   font-weight: 700;
   font-size: $font-size-big;
@@ -28,9 +33,6 @@
 }
 
 .copyright__icon {
-  position: relative;
-  top: -6px;
-
   path {
     fill: $seafoam;
   }
