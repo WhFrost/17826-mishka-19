@@ -1,6 +1,8 @@
 .catalog {
   position: relative;
 
+  @include container;
+
   @media (min-width: $tablet-width) {
     padding-top: 79px;
   }
@@ -115,8 +117,6 @@
   font-size: $font-size-small;
   line-height: 2.3;
   color: $greyish;
-
-
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-base;

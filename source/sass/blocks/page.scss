@@ -1,20 +1,16 @@
 .page {
-  @include container;
+  //@include container;
 }
 
 .page__title-wrapper {
-  margin-right: -30px;
   margin-bottom: 30px;
-  margin-left: -30px;
   padding-top: 76px;
   padding-bottom: 74px;
 
   background-color: $bg-white;
 
   @media (min-width: $tablet-width) {
-    margin-right: -52px;
     margin-bottom: 0;
-    margin-left: -52px;
     padding-bottom: 80px;
   }
 }

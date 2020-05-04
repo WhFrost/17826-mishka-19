@@ -13,8 +13,6 @@
     left: 0;
 
     height: 24px;
-    margin-right: -52px;
-    margin-left: -52px;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -23,12 +21,15 @@
 }
 
 .order__content {
-  margin-bottom: 30px;
+  margin: 0;
+  padding-bottom: 30px;
 
   font-weight: 400;
   font-size: $font-size-small;
   line-height: 1.9;
   color: $greyish;
+
+  @include container;
 
   @media (min-width: $tablet-width) {
     margin: 0;

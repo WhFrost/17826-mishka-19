@@ -2,6 +2,8 @@
   padding-top: 34px;
   padding-bottom: 30px;
 
+  @include container;
+
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }

@@ -3,11 +3,11 @@
 
   padding-bottom: 45px;
 
+  @include container;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -52px;
-    margin-left: -52px;
     padding-top: 86px;
     padding-bottom: 69px;
 
@@ -29,8 +29,6 @@
   left: 0;
 
   height: 6px;
-  margin-right: -30px;
-  margin-left: -30px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
@@ -120,11 +118,11 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    justify-content: space-between;
     width: 175px;
     margin: 0;
     margin-top: -80px;
     margin-left: auto;
-    justify-content: space-between;
   }
 }
 
@@ -138,8 +136,9 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     padding: 0;
-width: auto;
+
     border: none;
   }
 }
@@ -174,8 +173,8 @@ width: auto;
     order: 1;
     align-self: start;
     width: 175px;
-    padding: 20px 41px;
-    margin-left: auto;
     margin-right: 52px;
+    margin-left: auto;
+    padding: 20px 41px;
   }
 }
