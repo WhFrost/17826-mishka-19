@@ -53,12 +53,10 @@
 }
 
 .form__radio-name {
+  position: relative;
+
   padding-bottom: 25px;
   padding-left: 62px;
-}
-
-.form__radio-name {
-  position: relative;
 
   cursor: pointer;
 }
