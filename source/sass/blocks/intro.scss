@@ -58,8 +58,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-
-    @include container;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 

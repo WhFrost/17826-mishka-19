@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 
     border: none;
   }

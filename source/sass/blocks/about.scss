@@ -37,6 +37,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+
+    font-size: $font-size-big;
+    line-height: 1.1;
   }
 }
 
@@ -49,8 +52,36 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding-right: 38px;
+    padding-right: 83px;
     padding-bottom: 60px;
+
+    &--flower {
+      order: -6;
+    }
+
+    &--money {
+      order: -4;
+    }
+
+    &--like {
+      order: -2;
+    }
+
+    &--ball {
+      order: -5;
+    }
+
+    &--rocket {
+      order: -3;
+    }
+
+    &--gift {
+      order: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 115px;
   }
 }
 

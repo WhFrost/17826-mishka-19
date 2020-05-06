@@ -12,6 +12,11 @@
     padding-top: 43px;
     padding-bottom: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 96px;
+  }
 }
 
 .top-product::before {
@@ -27,6 +32,14 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
   }
 }
 
@@ -46,9 +59,16 @@
   @media (min-width: $tablet-width) {
     height: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 23px;
+    margin: 0 50px;
+  }
 }
 
 .top-product__title-wrapper {
+  position: relative;
+
   width: 100%;
   margin-bottom: 8px;
 
@@ -56,6 +76,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    padding-top: 54px;
   }
 }
 
@@ -68,6 +93,8 @@
   line-height: 1.2;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+
     font-size: 43px;
   }
 }
@@ -89,6 +116,12 @@
 
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: -128px;
+  }
 }
 
 .top-product__content-wrapper {
@@ -97,6 +130,12 @@
     width: 50%;
     margin: 0;
     padding-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+    margin-bottom: 110px;
+    padding-right: 58px;
   }
 }
 
@@ -110,8 +149,14 @@
   color: $greyish;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+
     font-size: $font-size-medium;
     line-height: 1.7;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
   }
 }
 
@@ -163,6 +208,11 @@
   @media (min-width: $tablet-width) {
     width: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    margin-top: -150px;
+  }
 }
 
 .top-product__order {
@@ -175,6 +225,14 @@
     margin-top: -136px;
     padding-right: 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+    margin-top: auto;
+    margin-top: -119px;
+    padding: 0;
+    padding-right: 58px;
+  }
 }
 
 .top-product__cost {
@@ -186,9 +244,14 @@
   line-height: 1.3;
   text-align: center;
   color: $greyish;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .top-product__link {
+  box-sizing: border-box;
   padding: 16px 81px;
 
   font-weight: 700;
@@ -198,4 +261,12 @@
   color: $greyish;
 
   border: 2px solid $greyish;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+
+    font-size: $font-size-medium;
+  }
 }

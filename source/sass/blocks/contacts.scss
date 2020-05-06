@@ -6,10 +6,24 @@
     padding-top: 72px;
     padding-bottom: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-bottom: 105px;
+  }
 }
 
 .contacts__wrapper {
   @include container;
+
+  @media (min-width: $desktop-width) {
+    width: 51%;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .contacts__title {
@@ -26,6 +40,10 @@
     margin-bottom: 65px;
 
     font-size: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 81px;
   }
 }
 
@@ -45,6 +63,14 @@
   @media (min-width: $tablet-width) {
     display: block;
     margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 81px;
+    left: -93px;
+
+    margin-left: 0;
   }
 }
 
@@ -67,6 +93,11 @@
 
     font-size: $font-size-medium;
     line-height: 1.8;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -111,10 +142,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 46%;
+    height: 457px;
+    margin-bottom: 0;
+
     background-image: url("../img/map-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../imgdesktop@2x.jpg");
+      background-image: url("../img/map-desktop@2x.jpg");
     }
   }
 }
@@ -130,5 +165,11 @@
     margin-right: auto;
     margin-left: auto;
     padding: 20px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -64px;
+    margin-right: 0;
+    margin-left: 225px;
   }
 }

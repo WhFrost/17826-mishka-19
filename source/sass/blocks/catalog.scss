@@ -17,8 +17,6 @@
     left: 0;
 
     height: 24px;
-    margin-right: -52px;
-    margin-left: -52px;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
@@ -102,8 +100,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
-    width: 41%;
     padding-top: 29px;
     padding-bottom: 29px;
   }
@@ -127,8 +125,8 @@
 .catalog__cost-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
   padding-top: 27px;
+  padding-bottom: 30px;
 
   border-top: 1px solid $grey-border;
 

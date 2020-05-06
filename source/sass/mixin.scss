@@ -1,6 +1,5 @@
 @mixin container($padding: 30px) {
   box-sizing: border-box;
-  max-width: 1150px;
   margin-right: auto;
   margin-left: auto;
   padding-right: $padding;
@@ -9,6 +8,11 @@
   @media (min-width: $tablet-width) {
     padding-right: $padding + 22px;
     padding-left: $padding + 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: $padding + 20px;
+    padding-left: $padding + 195px;
   }
 }
 
