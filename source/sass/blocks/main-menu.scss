@@ -31,7 +31,7 @@
 }
 
 .main-menu--opened .main-menu__toggle {
-  top: 37px;
+  top: 35px;
   right: 30px;
 
   &::before,
@@ -75,6 +75,8 @@
 .main-menu__wrapper {
   position: relative;
 
+  border-bottom: 1px solid $grey-border;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -86,15 +88,52 @@
     display: none;
   }
 
-  .main-menu--closed .user-menu__list {
+  .main-menu--closed .main-menu__list--user {
     display: none;
+  }
+}
+
+.main-menu__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    justify-content: flex-start;
+    order: -2;
+    padding-bottom: 20px;
+    padding-left: 51px;
+  }
+}
+
+.main-menu__image {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 .main-menu__list {
   margin: 0;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0;
 
   list-style: none;
@@ -112,23 +151,22 @@
   }
 }
 
+
 .main-menu__item {
   min-height: 79px;
 
   background-color: $white;
-  border-bottom: 1px solid $grey-border;
+  border-top: 1px solid $grey-border;
 
   @media (min-width: $tablet-width) {
-    border: 0;
+    border-top: none;
   }
 }
 
-.main-menu__item:first-child {
-  border-top: 1px solid $grey-border;
-}
-
-.main-menu__list--user .main-menu__item:first-child {
-  border-top: 0;
+.main-menu__item--user {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $grey-border;
+  }
 }
 
 .main-menu__link {
@@ -157,6 +195,20 @@
   left: 32px;
 
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: 0;
+  }
+}
+
+.main-menu__link--search {
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    font-size: 0;
+  }
 }
 
 .main-menu__link--cart .main-menu__icon {

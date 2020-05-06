@@ -6,17 +6,3 @@
     flex-direction: row;
   }
 }
-
-.header__logo {
-  margin-top: 22px;
-  margin-right: auto;
-  margin-bottom: 22px;
-  margin-left: auto;
-
-  @media (min-width: $tablet-width) {
-    width: 112px;
-    height: 46px;
-    margin-bottom: 20px;
-    margin-left: 51px;
-  }
-}
