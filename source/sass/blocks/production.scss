@@ -4,6 +4,15 @@
   color: $greyish;
 
   @include container;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+    padding-left: 50px;
+  }
 }
 
 .production__wrapper {
@@ -12,13 +21,6 @@
 
   border: 1px solid $grey-border;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0;
-    padding-bottom: 46px;
-  }
-
   &:hover {
     box-shadow: 0 6px 10px 0 $black;
   }
@@ -26,28 +28,58 @@
   &:active {
     box-shadow: 0 3px 5px 0 $black;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
 }
 
-.production__title {
-  display: flex;
-  align-items: center;
-  margin: 0;
+.production__title-wrapper {
   margin-right: 43px;
   margin-bottom: 26px;
   margin-left: 34px;
-
-  font-weight: 700;
-  font-size: $font-size-medium;
-  line-height: 1.4;
 
   @media (min-width: $tablet-width) {
     margin-right: 42px;
     margin-bottom: 0;
     margin-left: 42px;
     padding-top: 43px;
+  }
 
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-right: 79px;
+    padding-left: 79px;
+  }
+}
+
+.production__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: 1.4;
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
   }
 }
 
@@ -60,11 +92,20 @@
   path {
     fill: $seafoam;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    margin-bottom: 31px;
+  }
 }
 
 .production__player {
   @media (min-width: $tablet-width) {
     order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
   }
 }
 
@@ -114,6 +155,16 @@
   @media (min-width: $tablet-width) {
     padding-right: 41px;
     padding-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    margin-top: -265px;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 42px;
+    padding-right: 26px;
+    padding-left: 79px;
   }
 }
 
