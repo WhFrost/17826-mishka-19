@@ -362,12 +362,15 @@
   padding-bottom: 31px;
 
   font-weight: 400;
-  font-size: 14px;
+  font-size: $font-size-base;
   line-height: 1;
   color: $greyish;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+
+    font-size: $font-size-medium;
+    line-height: 1.8;
   }
 }
 
