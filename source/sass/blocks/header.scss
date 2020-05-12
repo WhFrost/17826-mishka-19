@@ -1,6 +1,9 @@
 .header {
   display: flex;
   flex-direction: column;
+  max-width: $desktop-width;
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: $white;
 
