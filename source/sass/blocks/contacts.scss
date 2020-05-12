@@ -155,16 +155,14 @@
 }
 
 .contacts__button {
-  display: block;
   margin-right: 30px;
   margin-left: 30px;
-  padding: 20px 49px;
+
 
   @media (min-width: $tablet-width) {
     width: 230px;
     margin-right: auto;
     margin-left: auto;
-    padding: 20px 38px;
   }
 
   @media (min-width: $desktop-width) {

@@ -86,7 +86,9 @@
 }
 
 .catalog__item:not(:nth-child(3n)) {
-  margin-right: 48px;
+  @media (min-width: $desktop-width) {
+    margin-right: 48px;
+  }
 }
 
 .catalog__title {

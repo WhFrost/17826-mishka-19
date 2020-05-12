@@ -250,22 +250,8 @@
 }
 
 .top-product__link {
-  box-sizing: border-box;
-  padding: 16px 81px;
-
-  font-weight: 700;
-  font-size: $font-size-big;
-  line-height: 1;
-  text-align: center;
-  color: $greyish;
-
-  border: 2px solid $greyish;
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
-    padding: 20px 100px;
-
-    font-size: $font-size-medium;
   }
 }

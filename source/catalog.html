@@ -6,26 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="preload" href="../fonts/opensans.woff2">
+  <link rel="preload" href="../fonts/opensans.woff2" as="font">
   <title>Мишка: Каталог товаров</title>
 </head>
 
 <body>
   <div class="page">
     <header class="page__header header">
-      <a href="index.html" class="header__logo">
-        <picture class="header__image logo">
-          <source media="(min-width:1150px)" srcset="./img/logo-desktop.svg">
-          <source media="(min-width:768px)" srcset="./img/logo-tablet.svg">
-          <img src="./img/logo-mobile.svg" alt="HTML Academy: Мишка" width="86" height="35">
-        </picture>
-      </a>
       <nav class="header__nav main-menu main-menu--closed main-menu--nojs">
-        <button class="main-menu__toggle">
-          <span class="visually-hidden">Показать меню</span>
-        </button>
         <div class="main-menu__wrapper">
-          <ul class="main-menu__list">
+          <div class="main-menu__logo-wrapper">
+            <a href="index.html" class="main-menu__logo">
+              <picture class="main-menu__image">
+                <source media="(min-width:1150px)" srcset="./img/logo-desktop.svg">
+                <source media="(min-width:768px)" srcset="./img/logo-tablet.svg">
+                <img src="./img/logo-mobile.svg" alt="HTML Academy: Мишка" width="86" height="35">
+              </picture>
+            </a>
+          </div>
+          <button class="main-menu__toggle">
+            <span class="visually-hidden">Показать меню</span>
+          </button>
+          <ul class="main-menu__list main-menu__list--left">
             <li class="main-menu__item">
               <a href="catalog.html" class="main-menu__link">
                 Каталог товаров
@@ -38,7 +40,7 @@
             </li>
           </ul>
           <ul class="main-menu__list main-menu__list--user">
-            <li class="main-menu__item">
+            <li class="main-menu__item main-menu__item--user">
               <a href="#" class="main-menu__link main-menu__link--search">
                 <svg class="main-menu__icon" width="18" height="18" version="1.1" id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -49,7 +51,7 @@
                 Поиск по сайту
               </a>
             </li>
-            <li class="main-menu__item ">
+            <li class="main-menu__item main-menu__item--user">
               <a href="#" class="main-menu__link main-menu__link--cart">
                 <svg class="main-menu__icon" width="21" height="21" version="1.1" id="Layer_2"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -62,6 +64,21 @@
               </a>
             </li>
           </ul>
+          <ul class="main-menu__list main-menu__list--promo">
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link--promo">
+                Новые поступления
+              </a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link--promo">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <span class="main-menu__delivery">
+            Бесплатная доставка по России
+          </span>
         </div>
       </nav>
     </header>

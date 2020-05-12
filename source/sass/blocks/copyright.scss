@@ -3,6 +3,7 @@
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
+    width: 33.3%;
     margin: 0;
   }
 }
@@ -15,6 +16,10 @@
   font-weight: 700;
   font-size: $font-size-big;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__link:active {
