@@ -28,6 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     padding-right: 225px;
     padding-left: 225px;
   }
@@ -58,7 +59,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-right: 121px;
+    width: 25%;
   }
 }
 
@@ -74,6 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 75%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -94,24 +96,27 @@
 .form__radio-name {
   position: relative;
 
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 16px;
   padding-left: 62px;
 
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 57px;
+    padding-top: 15px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-bottom: 42px;
   }
 }
 
 .form__radio + .form__radio-indicator {
   content: "";
   position: absolute;
-  top: -13px;
+  top: 0;
   left: 0;
 
   width: 40px;
@@ -163,27 +168,30 @@
 .form__checkbox-name {
   position: relative;
 
-  padding-bottom: 46px;
+  padding-top: 10px;
+  padding-bottom: 34px;
   padding-left: 63px;
 
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 31.3%;
-    padding-top: 7px;
-    padding-bottom: 43px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 42px;
     padding-left: 78px;
   }
 
   @media (min-width: $desktop-width) {
     width: 23.3%;
+    padding-right: 28px;
   }
 }
 
 .form__checkbox + .form__checkbox-indicator {
   content: "";
   position: absolute;
-  top: -13px;
+  top: 0;
   left: 0;
 
   width: 40px;
@@ -211,6 +219,9 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
+    bottom: 14px;
+    left: 13px;
+
     width: 33px;
     height: 22px;
   }
