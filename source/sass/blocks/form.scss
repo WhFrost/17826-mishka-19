@@ -49,6 +49,7 @@
   position: relative;
 
   margin: 0;
+  margin-bottom: 20px;
 
   font-size: $font-size-medium;
   line-height: 1;
@@ -82,8 +83,7 @@
 }
 
 .form__field-wrapper {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -112,8 +112,9 @@
 .form__radio-name {
   position: relative;
 
-  padding-top: 19px;
-  padding-bottom: 7px;
+  min-height: 60px;
+  padding-top: 14px;
+  padding-bottom: 12px;
   padding-left: 62px;
 
   cursor: pointer;
@@ -132,7 +133,7 @@
 .form__radio + .form__radio-indicator {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 5px;
   left: 0;
 
   width: 36px;
@@ -184,8 +185,9 @@
 .form__checkbox-name {
   position: relative;
 
-  padding-top: 21px;
-  padding-bottom: 23px;
+  min-height: 61px;
+  padding-top: 17px;
+  padding-bottom: 27px;
   padding-left: 63px;
 
   cursor: pointer;
@@ -207,7 +209,7 @@
 .form__checkbox + .form__checkbox-indicator {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 0;
 
   width: 36px;
@@ -259,13 +261,20 @@
   position: relative;
 
   display: block;
-  padding-bottom: 24px;
+  padding-top: 9px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: baseline;
     width: 100%;
   }
+}
+
+.form__text-name--phone,
+.form__text-name--email {
+  margin-top: -21px;
+  padding-bottom: 16px;
 }
 
 .form__user-name {
@@ -282,6 +291,10 @@
   }
 }
 
+.form__text-name--user-text {
+  padding-top: 4px;
+  padding-bottom: 0;
+}
 
 .form__text {
   box-sizing: border-box;
@@ -309,8 +322,8 @@
 
 .form__icon {
   position: absolute;
-  top: 11px;
-  right: 2px;
+  top: 20px;
+  right: 7px;
 
   opacity: 0.2;
 }
@@ -328,7 +341,10 @@
 .form__user-text {
   box-sizing: border-box;
   width: 100%;
-  padding: 18px 17px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 21px;
+  padding-left: 15px;
 
   border: 2px solid $black;
 
@@ -377,6 +393,8 @@
 }
 
 .form__submit {
+  padding-right: 30px;
+  padding-left: 30px;
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -391,11 +409,11 @@
 
 .form__info {
   margin: 0;
-  padding-bottom: 31px;
+  margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: $font-size-base;
-  line-height: 1;
+  font-size: 14px;
+  line-height: 1.1;
   color: $greyish;
 
   @media (min-width: $tablet-width) {
