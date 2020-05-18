@@ -30,3 +30,19 @@
     background-color: $greyish;
   }
 }
+
+.button--seafoam {
+  color: $white;
+
+  background-color: $seafoam;
+  border: 2px solid $seafoam;
+
+  &:hover,
+  &:focus {
+    background-color: $seafoam;
+  }
+
+  &:active {
+    background-color: $seafoam;
+  }
+}

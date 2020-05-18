@@ -1,7 +1,7 @@
 .top-product {
   position: relative;
 
-  padding-top: 34px;
+  padding-top: 27px;
   padding-bottom: 42px;
 
   @include container;
@@ -9,37 +9,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 43px;
+    padding-top: 45px;
     padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 54px;
     padding-bottom: 96px;
-  }
-}
-
-.top-product::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    top: -22px;
-    right: 0;
-    left: 0;
-
-    height: 24px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: contain;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 34px;
   }
 }
 
@@ -62,7 +38,8 @@
 
   @media (min-width: $desktop-width) {
     height: 23px;
-    margin: 0 50px;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 }
 
@@ -70,56 +47,64 @@
   position: relative;
 
   width: 100%;
-  margin-bottom: 8px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 55px;
+    padding-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
-    padding-top: 54px;
+    padding-top: 72px;
+    padding-bottom: 52px;
   }
 }
 
 .top-product__title {
   margin: 0;
-  margin-bottom: 8px;
+  padding-bottom: 6px;
 
   font-weight: 700;
   font-size: $font-size-h2;
   line-height: 1.2;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    padding-bottom: 0;
 
     font-size: 43px;
+    line-height: 1.15;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 1;
   }
 }
 
 .top-product__tag {
   margin: 0;
-  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: $font-size-medium;
   line-height: 1.2;
   color: $seafoam;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 70px;
     margin: 0;
-    margin-right: 27px;
+    margin-right: 24px;
     margin-left: auto;
+    padding-top: 7px;
 
+    line-height: 1;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
+    top: 77px;
     left: -128px;
   }
 }
@@ -141,7 +126,7 @@
 
 .top-product__content {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 
   font-weight: 400;
   font-size: $font-size-base;
@@ -149,14 +134,14 @@
   color: $greyish;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 38px;
 
     font-size: $font-size-medium;
-    line-height: 1.7;
+    line-height: 1.75;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 49px;
   }
 }
 
@@ -188,20 +173,23 @@
   border-bottom: 1px solid $grey-border;
 }
 
-.top-product__key,
-.top-product__value {
+.top-product__key {
   display: block;
-  width: 50%;
+  width: 30%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.top-product__key {
-  padding-right: 0;
-}
-
 .top-product__value {
-  padding-left: 0;
+  display: block;
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
 }
 
 .top-product__image {
@@ -211,24 +199,25 @@
 
   @media (min-width: $desktop-width) {
     width: 60%;
-    margin-top: -150px;
+    margin-top: -160px;
   }
 }
 
 .top-product__order {
   width: 100%;
-  padding-top: 29px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     width: 50%;
-    margin-top: -136px;
+    margin-top: -152px;
+    padding-top: 50px;
     padding-right: 43px;
   }
 
   @media (min-width: $desktop-width) {
     width: 40%;
-    margin-top: -119px;
+    margin-top: -110px;
     padding: 0;
     padding-right: 58px;
   }
@@ -236,7 +225,7 @@
 
 .top-product__cost {
   margin: 0;
-  margin-bottom: 28px;
+  padding-bottom: 26px;
 
   font-weight: 700;
   font-size: $font-size-big;
@@ -245,7 +234,7 @@
   color: $greyish;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 34px;
+    padding-bottom: 34px;
   }
 }
 

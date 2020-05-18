@@ -11,6 +11,11 @@
 </head>
 
 <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <div class="page">
     <header class="page__header header">
       <nav class="header__nav main-menu main-menu--closed main-menu--nojs">
@@ -121,7 +126,7 @@
                 <p class="catalog__cost">
                   1 200 руб.
                 </p>
-                <a href="#" class="catalog__buy">
+                <a href="#" class="catalog__buy buy">
                   <span class="visually-hidden">Купить</span>
                   <svg class="catalog__icon" version="1.1" id="icon-cart" width="20" height="19"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -164,7 +169,7 @@
                 <p class="catalog__cost">
                   690 руб.
                 </p>
-                <a href="#" class="catalog__buy">
+                <a href="#" class="catalog__buy buy">
                   <span class="visually-hidden">Купить</span>
                   <svg class="catalog__icon" version="1.1" width="20" height="19" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="264.205 370.961 20.294 18.849"
@@ -196,7 +201,7 @@
             <div class="catalog__content">
               <h2 class="catalog__title">
                 <a href="#" class="catalog__title--link">
-                  Большая корзинка для игрушек
+                  Большая корзинка для&nbsp;игрушек
                 </a>
               </h2>
               <p class="catalog__text">
@@ -206,7 +211,7 @@
                 <p class="catalog__cost">
                   1 500 руб.
                 </p>
-                <a href="#" class="catalog__buy">
+                <a href="#" class="catalog__buy buy">
                   <span class="visually-hidden">Купить</span>
                   <svg class="catalog__icon" version="1.1" width="20" height="19" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="264.205 370.961 20.294 18.849"
@@ -246,7 +251,8 @@
                 <source media="(min-width:1150px)"
                   srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-                <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+                <img class="production__image" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x"
+                  alt="Процесс производства">
               </picture>
               <button class="production__button" type="button">
                 <span class="visually-hidden">
@@ -351,6 +357,37 @@
         </a>
       </div>
     </footer>
+
+    <section class="modal visually-hidden">
+      <div class="modal__wrapper">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <h2 class="modal__title">
+            Добавить в&nbsp;корзину
+          </h2>
+          <p class="modal__content">
+            Выберите размер:
+          </p>
+          <div class="modal__size">
+            <input class="modal__value visually-hidden" type="radio" name="size" id="size-s" value="S" checked>
+            <label class="modal__name" for="size-s">
+              S
+            </label>
+            <input class="modal__value visually-hidden" type="radio" name="size" id="size-m" value="M">
+            <label class="modal__name" for="size-m">
+              M
+            </label>
+            <input class="modal__value visually-hidden" type="radio" name="size" id="size-l" value="L">
+            <label class="modal__name" for="size-l">
+              L
+            </label>
+          </div>
+          <button class="modal__button button button--seafoam" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
+    </section>
+
   </div>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   <script src="./js/script.js"></script>

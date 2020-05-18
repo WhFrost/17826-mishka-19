@@ -4,25 +4,10 @@
   font-family: $font-family;
 }
 
-.order::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    top: -23px;
-    right: 0;
-    left: 0;
-
-    height: 24px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: contain;
-  }
-}
-
 .order__content {
   margin: 0;
-  padding-bottom: 30px;
+  padding-top: 22px;
+  padding-bottom: 23px;
 
   font-weight: 400;
   font-size: $font-size-small;
@@ -32,10 +17,13 @@
   @include container;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding-top: 68px;
+    padding-top: 72px;
 
     font-size: $font-size-medium;
     line-height: 1.8;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 125px;
   }
 }

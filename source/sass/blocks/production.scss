@@ -16,17 +16,17 @@
 }
 
 .production__wrapper {
-  padding-top: 29px;
-  padding-bottom: 33px;
+  padding-top: 24px;
+  padding-bottom: 32px;
 
   border: 1px solid $grey-border;
 
   &:hover {
-    box-shadow: 0 6px 10px 0 $black;
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 $black;
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
   }
 
   @media (min-width: $tablet-width) {
@@ -44,15 +44,15 @@
 }
 
 .production__title-wrapper {
-  margin-right: 43px;
+  margin-right: 32px;
   margin-bottom: 26px;
-  margin-left: 34px;
+  margin-left: 32px;
 
   @media (min-width: $tablet-width) {
     margin-right: 42px;
     margin-bottom: 0;
     margin-left: 42px;
-    padding-top: 43px;
+    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -91,6 +91,10 @@
 
   path {
     fill: $seafoam;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +120,10 @@
 .production__image {
   width: 100%;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .production__button {
@@ -148,33 +156,40 @@
 }
 
 .production__content {
-  padding-top: 34px;
+  padding-top: 28px;
   padding-right: 34px;
   padding-left: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 41px;
-    padding-left: 41px;
+    padding-right: 44px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 25%;
     margin-top: -265px;
     margin-left: auto;
     padding: 0;
     padding-top: 42px;
     padding-right: 26px;
-    padding-left: 79px;
   }
 }
 
 .production__text {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 
   font-weight: 400;
   font-size: $font-size-small;
   line-height: 1.9;
+  color: $greyish;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+
+    font-size: $font-size-base;
+    line-height: 2;
+  }
 }
 
 .production__link {

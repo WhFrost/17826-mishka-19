@@ -1,6 +1,8 @@
 .catalog {
   position: relative;
 
+  padding-top: 30px;
+
   @include container;
 
   @media (min-width: $tablet-width) {
@@ -8,29 +10,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
+    padding-top: 130px;
     padding-right: 50px;
     padding-left: 50px;
-  }
-}
-
-.catalog::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    top: -23px;
-    right: 0;
-    left: 0;
-
-    height: 24px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: contain;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 34px;
   }
 }
 
@@ -51,10 +33,15 @@
 .catalog__image {
   width: 100%;
   height: auto;
-  margin-bottom: 31px;
+
 
   @media (min-width: $tablet-width) {
+    width: 334px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
   }
 }
 
@@ -66,16 +53,17 @@
   border: 1px solid $grey-border;
 
   &:hover {
-    box-shadow: 0 6px 10px 0 $black;
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 $black;
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,7 +81,11 @@
 
 .catalog__title {
   margin: 0;
-  margin-bottom: 17px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .catalog__title--link {
@@ -119,6 +111,7 @@
 }
 
 .catalog__content {
+  padding-top: 24px;
   padding-right: 28px;
   padding-left: 28px;
 
@@ -126,14 +119,21 @@
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    padding-top: 29px;
+    padding-top: 23px;
     padding-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-right: 34px;
+    padding-bottom: 22px;
+    padding-left: 26px;
   }
 }
 
 .catalog__text {
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 19px;
 
   font-weight: 400;
   font-size: $font-size-small;
@@ -144,19 +144,29 @@
     font-size: $font-size-base;
     line-height: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 12px;
+  }
 }
 
 .catalog__cost-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 27px;
-  padding-bottom: 30px;
+  padding-top: 21px;
+  padding-bottom: 26px;
 
   border-top: 1px solid $grey-border;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
-    margin-bottom: 0;
+    padding-top: 22px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    padding-bottom: 5px;
   }
 }
 

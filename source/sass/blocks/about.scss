@@ -1,11 +1,15 @@
 .about {
-  padding-top: 34px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 17px;
 
   @include container;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
   }
 }
 
@@ -19,9 +23,14 @@
   line-height: 1.2;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 49px;
 
     font-size: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 1;
   }
 }
 
@@ -47,12 +56,12 @@
   position: relative;
 
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 55px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding-right: 83px;
+    padding-right: 40px;
     padding-bottom: 60px;
 
     &--flower {
@@ -81,14 +90,43 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 40%;
     padding-right: 115px;
   }
 }
 
 .about__icon {
   position: absolute;
-  top: 15px;
-  left: 10px;
+
+  &--flower {
+    top: 0;
+    left: 9px;
+  }
+
+  &--money {
+    top: 2px;
+    left: 0;
+  }
+
+  &--like {
+    top: 7px;
+    left: 8px;
+  }
+
+  &--ball {
+    top: 4px;
+    left: 5px;
+  }
+
+  &--rocket {
+    top: 5px;
+    left: -5px;
+  }
+
+  &--gift {
+    top: 3px;
+    left: 4px;
+  }
 
   path {
     fill: $seafoam;

@@ -36,7 +36,6 @@ if (myMap) {
   });
 }
 
-
 var navMain = document.querySelector('.main-menu');
 var navToggle = document.querySelector('.main-menu__toggle');
 
