@@ -4,9 +4,9 @@ if (myMap) {
 
   ymaps.ready(function () {
     myMap = new ymaps.Map('map__canvas', {
-      center: [59.938655, 30.323143],
-      zoom: 17
-    }, {
+        center: [59.938655, 30.323143],
+        zoom: 17
+      }, {
         searchControlProvider: 'yandex#search'
       }),
 
@@ -19,19 +19,19 @@ if (myMap) {
         hintContent: 'ул. Большая Конюшенная, 19/8',
         balloonContent: 'ул. Большая Конюшенная, 19/8'
       }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: './img/icon-map-pin.svg',
-          // Размеры метки.
-          iconImageSize: [67, 100],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-40, -140]
-        }),
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: './img/icon-map-pin.svg',
+        // Размеры метки.
+        iconImageSize: [67, 100],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-40, -140]
+      }),
 
-    myMap.geoObjects
+      myMap.geoObjects
       .add(myPlacemark)
   });
 }
@@ -48,5 +48,21 @@ navToggle.addEventListener('click', function () {
   } else {
     navMain.classList.add('main-menu--closed');
     navMain.classList.remove('main-menu--opened');
+  }
+});
+
+
+var modal = document.querySelector(".modal");
+var buy = document.querySelector(".buy");
+
+buy.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.remove("visually-hidden");
+})
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    modal.classList.add("visually-hidden");
   }
 });
