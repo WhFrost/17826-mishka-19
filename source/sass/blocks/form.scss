@@ -15,6 +15,10 @@
     padding-top: 34px;
     padding-bottom: 27px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+  }
 }
 
 .form__container:nth-child(2n) {
@@ -33,6 +37,10 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 111px;
   }
 }
 
@@ -62,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 15%;
+    width: 11.5%;
   }
 }
 
@@ -92,7 +100,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 85%;
+    width: 88.5%;
   }
 }
 
@@ -204,13 +212,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33%;
-    padding-right: 28px;
+    width: 30%;
+    padding-left: 81px;
   }
 }
 
 .form__checkbox-name:nth-child(2n-1) {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     margin-right: 38px;
   }
 }
@@ -222,8 +230,8 @@
   left: 0;
 
   box-sizing: border-box;
-  width: 36px;
-  height: 35px;
+  width: 40px;
+  height: 39px;
 
   border: 2px solid $greyish;
 
@@ -233,6 +241,11 @@
 
     width: 54px;
     height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
   }
 }
 
@@ -284,6 +297,10 @@
     padding-top: 0;
     padding-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
 }
 
 .form__text-name--phone,
@@ -294,6 +311,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 11px;
   }
 }
 
@@ -318,6 +339,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 15px;
     padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -355,6 +380,11 @@
   @media (min-width: $tablet-width) {
     top: 11px;
     right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 13px;
+    right: 183px;
   }
 }
 
@@ -425,6 +455,7 @@
 .form__submit {
   padding-right: 30px;
   padding-left: 30px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -433,7 +464,10 @@
     padding-bottom: 50px;
 
     @include container;
-    @include container;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
   }
 }
 
