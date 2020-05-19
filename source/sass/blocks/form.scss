@@ -12,8 +12,8 @@
 
 .form__container {
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
-    padding-bottom: 50px;
+    padding-top: 34px;
+    padding-bottom: 27px;
   }
 }
 
@@ -58,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 20%;
+    width: 25%;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,7 +88,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 75%;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,7 +121,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 15px;
-    padding-bottom: 38px;
+    padding-bottom: 42px;
+    padding-left: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,6 +145,8 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    top: 0;
+
     width: 48px;
     height: 48px;
   }
@@ -206,20 +209,30 @@
   }
 }
 
+.form__checkbox-name:nth-child(2n-1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 38px;
+  }
+}
+
 .form__checkbox + .form__checkbox-indicator {
   content: "";
   position: absolute;
   top: 5px;
   left: 0;
 
+  box-sizing: border-box;
   width: 36px;
   height: 35px;
 
   border: 2px solid $greyish;
 
   @media (min-width: $tablet-width) {
+    top: 0;
+    left: -1px;
+
     width: 54px;
-    height: 54px;
+    height: 52px;
   }
 }
 
@@ -237,8 +250,8 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    bottom: 14px;
-    left: 13px;
+    bottom: 12px;
+    left: 9px;
 
     width: 33px;
     height: 22px;
@@ -268,6 +281,8 @@
     display: flex;
     align-items: baseline;
     width: 100%;
+    padding-top: 0;
+    padding-bottom: 24px;
   }
 }
 
@@ -275,6 +290,11 @@
 .form__text-name--email {
   margin-top: -21px;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-bottom: 9px;
+  }
 }
 
 .form__user-name {
@@ -294,6 +314,11 @@
 .form__text-name--user-text {
   padding-top: 4px;
   padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
 }
 
 .form__text {
@@ -326,6 +351,11 @@
   right: 7px;
 
   opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    right: 24px;
+  }
 }
 
 .form__icon--phone {
@@ -417,6 +447,7 @@
   color: $greyish;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     padding-bottom: 0;
 
     font-size: $font-size-medium;
