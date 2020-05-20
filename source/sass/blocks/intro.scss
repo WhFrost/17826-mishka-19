@@ -153,32 +153,26 @@
 
   opacity: 0.5;
 
-  path {
-    fill: #149080;
-  }
+  fill: #149080;
 }
 
 .intro__item:first-child:hover,
 .intro__item:first-child:focus {
-  margin-top: -5px;
-
   background-color: #59d5bc;
 }
 
 .intro__item:last-child:hover,
 .intro__item:last-child:focus {
-  margin-top: -5px;
-
   background-color: #46c1ae;
 }
 
-.intro__item:hover .intro__link,
-.intro__item:focus .intro__link {
-  padding-bottom: 35px;
+.intro__item:hover,
+.intro__item:focus {
+  transform: translateY(-5px);
 }
 
-.intro__item:hover .intro__icon,
-.intro__item:focus .intro__icon {
+.intro__link:hover .intro__icon,
+.intro__link:focus .intro__icon {
   opacity: 0.7;
 }
 

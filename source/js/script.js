@@ -51,9 +51,9 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-
+/*
 var modal = document.querySelector(".modal");
-var buy = document.querySelector(".buy");
+var buy = document.querySelectorAll(".buy");
 
 buy.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -66,3 +66,13 @@ window.addEventListener("keydown", function (evt) {
     modal.classList.add("visually-hidden");
   }
 });
+*/
+
+/*
+var modal = document.querySelector(".modal");
+var buyList = document.querySelectorAll(".buy");
+
+[...buyList].forEach((buy) => {
+  buy.addEventListener("click", (evt) => modal.classList.remove("visually-hidden"))
+})
+*/
