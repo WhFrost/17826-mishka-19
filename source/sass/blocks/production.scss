@@ -90,9 +90,8 @@
   height: 32px;
   margin-right: 25px;
 
-  path {
-    fill: $seafoam;
-  }
+  fill: $seafoam;
+
 
   @media (min-width: $tablet-width) {
     margin-right: 29px;

@@ -156,6 +156,7 @@
   fill: #149080;
 }
 
+/*
 .intro__item:first-child:hover,
 .intro__item:first-child:focus {
   background-color: #59d5bc;
@@ -168,6 +169,12 @@
 
 .intro__item:hover,
 .intro__item:focus {
+  transform: translateY(-5px);
+}
+
+*/
+
+.intro__item .intro__link:hover {
   transform: translateY(-5px);
 }
 

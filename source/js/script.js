@@ -72,7 +72,15 @@ window.addEventListener("keydown", function (evt) {
 var modal = document.querySelector(".modal");
 var buyList = document.querySelectorAll(".buy");
 
-[...buyList].forEach((buy) => {
+if (buyList != null)
+[buyList].forEach((buy) => {
   buy.addEventListener("click", (evt) => modal.classList.remove("visually-hidden"))
 })
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    modal.classList.add("visually-hidden");
+  }
+});
 */

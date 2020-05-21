@@ -20,10 +20,17 @@
 }
 
 .contacts__wrapper {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 15px;
     margin-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -157,9 +164,16 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    margin-right: -52px;
+    margin-left: -52px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 60%;
+    margin-right: 0;
     margin-bottom: 0;
+    margin-left: 0;
 
     background-image: url("../img/map-desktop@1x.jpg");
 
