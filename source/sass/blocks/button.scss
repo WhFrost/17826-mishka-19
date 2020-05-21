@@ -22,12 +22,16 @@
     color: $white;
 
     background-color: $greyish;
+
+    transition: all 0.1s;
   }
 
   &:active {
     color: rgba($white, 0.3);
 
     background-color: $greyish;
+
+    transition: all 0.1s;
   }
 }
 

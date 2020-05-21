@@ -24,6 +24,8 @@
 
     height: 34px;
     margin: 0;
+
+    background-position-x: 5px;
   }
 }
 
@@ -116,11 +118,11 @@
   }
 }
 
-.intro__item:first-child {
+.intro__item:first-child .intro__link {
   background-color: $seafoam;
 }
 
-.intro__item:last-child {
+.intro__item:last-child .intro__link {
   background-color: $greeny;
 }
 
@@ -140,8 +142,9 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: -5px;
     padding-top: 26px;
-    padding-bottom: 31px;
+    padding-bottom: 36px;
     padding-left: 37px;
 
     line-height: 1.5;
@@ -156,26 +159,22 @@
   fill: #149080;
 }
 
-/*
-.intro__item:first-child:hover,
-.intro__item:first-child:focus {
+.intro__item:first-child .intro__link:hover,
+.intro__item:first-child .intro__link:focus {
   background-color: #59d5bc;
 }
 
-.intro__item:last-child:hover,
-.intro__item:last-child:focus {
+.intro__item:last-child .intro__link:hover,
+.intro__item:last-child .intro__link:focus {
   background-color: #46c1ae;
 }
 
-.intro__item:hover,
-.intro__item:focus {
+.intro__item .intro__link:hover,
+.intro__item .intro__link:focus,
+.intro__item .intro__link:active {
   transform: translateY(-5px);
-}
 
-*/
-
-.intro__item .intro__link:hover {
-  transform: translateY(-5px);
+  transition: all 0.3s;
 }
 
 .intro__link:hover .intro__icon,

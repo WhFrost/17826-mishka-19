@@ -34,12 +34,17 @@
 
   @media (min-width: $tablet-width) {
     height: 15px;
+
+    background-position-x: 28px;
   }
+
 
   @media (min-width: $desktop-width) {
     height: 23px;
     margin-right: 50px;
     margin-left: 50px;
+
+    background-position-x: 26px;
   }
 }
 

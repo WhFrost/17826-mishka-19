@@ -4,8 +4,8 @@ if (myMap) {
 
   ymaps.ready(function () {
     myMap = new ymaps.Map('map__canvas', {
-        center: [59.938655, 30.323143],
-        zoom: 17
+        center: [59.938855, 30.323246],
+        zoom: 16.4
       }, {
         searchControlProvider: 'yandex#search'
       }),
@@ -28,7 +28,7 @@ if (myMap) {
         iconImageSize: [67, 100],
         // Смещение левого верхнего угла иконки относительно
         // её "ножки" (точки привязки).
-        iconImageOffset: [-40, -140]
+        iconImageOffset: [-23, -76]
       }),
 
       myMap.geoObjects
@@ -51,36 +51,21 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-/*
-var modal = document.querySelector(".modal");
-var buy = document.querySelectorAll(".buy");
-
-buy.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("visually-hidden");
-})
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    modal.classList.add("visually-hidden");
-  }
-});
-*/
-
-/*
 var modal = document.querySelector(".modal");
 var buyList = document.querySelectorAll(".buy");
 
-if (buyList != null)
-[buyList].forEach((buy) => {
-  buy.addEventListener("click", (evt) => modal.classList.remove("visually-hidden"))
-})
+
+if (buyList.length !== 0) {
+  Array.from(buyList).forEach(function(buy) {
+    buy.addEventListener("click", function() {
+      modal.classList.remove("visually-hidden");
+    })
+  })
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     modal.classList.add("visually-hidden");
   }
-});
-*/
+})
