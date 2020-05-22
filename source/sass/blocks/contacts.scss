@@ -62,8 +62,6 @@
 .contacts__title::after {
   content: "";
   position: absolute;
-  top: -6px;
-  right: -1px;
 
   display: none;
   width: 47px;
@@ -73,16 +71,15 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    top: -6px;
+    right: -1px;
+
     display: block;
-    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     top: 70px;
     left: -112px;
-
-    margin-left: 0;
   }
 }
 
