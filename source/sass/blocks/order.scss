@@ -1,12 +1,30 @@
 .order {
+  position: relative;
+
   font-family: $font-family;
 }
 
 .order__content {
-  margin-bottom: 30px;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 23px;
 
   font-weight: 400;
   font-size: $font-size-small;
   line-height: 1.9;
   color: $greyish;
+
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 72px;
+
+    font-size: $font-size-medium;
+    line-height: 1.8;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 125px;
+    padding-right: 225px;
+  }
 }

@@ -1,3 +1,65 @@
 .page {
-  @include container;
+  position: relative;
+}
+
+.page__title-wrapper {
+  position: relative;
+
+  padding-top: 70px;
+  padding-bottom: 77px;
+
+  background-color: $bg-white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 99px;
+  }
+}
+
+.page__title-wrapper::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+    left: 0;
+
+    height: 24px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -19px;
+
+    height: 34px;
+  }
+}
+
+.page__title {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 700;
+  font-size: $font-size-h1;
+  line-height: 1.1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 1.1;
+  }
 }

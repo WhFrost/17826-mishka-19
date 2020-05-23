@@ -1,0 +1,122 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($white, 0.9);
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  max-width: 568px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
+
+  background-color: $white;
+  border: solid 1px #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+    padding-bottom: 45px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: $font-size-h2;
+  line-height: 1.2;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+
+    font-size: 30px;
+    line-height: 1.9;
+  }
+}
+
+.modal__content {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: $font-size-base;
+  line-height: 2;
+  text-align: center;
+  color: $greyish;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-medium;
+    line-height: 1.76;
+  }
+}
+
+.modal__form {
+  max-width: 350px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal__size {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.modal__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  padding: 20px 37px;
+
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: 1;
+  text-align: center;
+  color: $greyish;
+  text-transform: uppercase;
+
+  border: 2px solid rgba($greyish, 0.1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgba($greyish, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.modal__name:not(:last-child) {
+  margin-right: 7px;
+}
+
+.modal__value:checked + .modal__name {
+  border-color: $seafoam;
+}

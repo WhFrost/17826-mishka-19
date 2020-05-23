@@ -1,9 +1,46 @@
 .footer {
   display: flex;
   flex-direction: column;
-  margin-right: -30px;
-  margin-left: -30px;
   padding-top: 25px;
 
   background-color: $bg-white;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+    padding-right: 50px;
+    padding-bottom: 51px;
+    padding-left: 50px;
+  }
+}
+
+.footer__logo {
+  display: none;
+  width: 102px;
+  height: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.footer__link {
+  &:hover,
+  &:focus {
+    path {
+      fill: $link-hover;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba($link-hover, 0.3);
+    }
+  }
 }

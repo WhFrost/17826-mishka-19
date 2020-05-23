@@ -9,23 +9,25 @@
   list-style: none;
 
   border-bottom: 1px solid $grey-border;
+
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
+    padding: 0;
+    padding-top: 5px;
+
+    border: none;
+  }
 }
 
 .social-list__item {
   margin: 0 20px;
 }
 
-.social-list__icon {
-  &:hover,
-  &:focus {
-    path {
-      fill: $link-hover;
-    }
-  }
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: $link-hover;
+}
 
-  &:active {
-    path {
-      fill: rgba($link-hover, 0.3);
-    }
-  }
+.social-list__link:active .social-list__icon {
+  fill: rgba($link-hover, 0.3);
 }

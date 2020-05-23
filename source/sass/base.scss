@@ -27,7 +27,8 @@ a {
   clip: rect(0 0 0 0);
 }
 
-img {
+img,
+picture {
   display: block;
   width: 100%;
   height: auto;

@@ -2,53 +2,162 @@
   padding-bottom: 55px;
 
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+.form__container {
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+  }
+}
+
+.form__container:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    background-color: $bg-white;
+  }
 }
 
 .form__group {
-  display: flex;
   margin: 0;
   padding: 0;
 
   border: none;
-  border-top: 1px solid $seafoam;
+
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 111px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+
+    border: none;
+  }
 }
 
 .form__title {
-  padding-right: 27px;
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
 
   font-size: $font-size-medium;
   line-height: 1;
   color: $seafoam;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 11.5%;
+  }
+}
+
+.form__title::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 63px;
+
+  width: 75%;
+  height: 1px;
+
+  background-color: $seafoam;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form__field-wrapper {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 88.5%;
+  }
 }
 
 .form__radio-name,
 .form__checkbox-name {
-  margin-top: 35px;
-  margin-bottom: 25px;
-  margin-left: 62px;
+  display: block;
+  box-sizing: border-box;
 
   font-size: $font-size-medium;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-big;
+  }
 }
 
 .form__radio-name {
   position: relative;
 
+  min-height: 60px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 62px;
+
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 42px;
+    padding-left: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-bottom: 42px;
+  }
 }
 
 .form__radio + .form__radio-indicator {
   content: "";
   position: absolute;
-  top: -13px;
-  left: -66px;
+  top: 5px;
+  left: 0;
 
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 
   background-color: transparent;
   border: 2px solid $greyish;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .form__radio-indicator:hover,
@@ -66,60 +175,100 @@
 .form__radio:checked + .form__radio-indicator::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 11px;
+  left: 10px;
 
   width: 16px;
   height: 16px;
 
   background-color: $seafoam;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    left: 13px;
+
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .form__checkbox-name {
   position: relative;
 
-  margin-bottom: 46px;
+  min-height: 61px;
+  padding-top: 17px;
+  padding-bottom: 27px;
+  padding-left: 63px;
 
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 42px;
+    padding-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    padding-left: 81px;
+  }
+}
+
+.form__checkbox-name:nth-child(2n-1) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-right: 38px;
+  }
 }
 
 .form__checkbox + .form__checkbox-indicator {
   content: "";
   position: absolute;
-  top: -13px;
-  left: -66px;
+  top: 5px;
+  left: 0;
 
+  box-sizing: border-box;
   width: 40px;
   height: 39px;
 
   border: 2px solid $greyish;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: -1px;
+
+    width: 54px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
 }
 
 .form__checkbox:checked + .form__checkbox-indicator::before {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 4px;
+  bottom: 9px;
+  left: 6px;
 
-  width: 16px;
-  height: 2px;
+  width: 22px;
+  height: 16px;
 
-  background-color: $black;
-  transform: rotate(45deg);
-}
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.form__checkbox:checked + .form__checkbox-indicator::after {
-  content: "";
-  position: absolute;
-  top: 21px;
-  left: 13px;
+  @media (min-width: $tablet-width) {
+    bottom: 12px;
+    left: 9px;
 
-  width: 27px;
-  height: 2px;
-
-  background-color: $black;
-  transform: rotate(-45deg);
+    width: 33px;
+    height: 22px;
+  }
 }
 
 .form__checkbox-indicator:hover,
@@ -137,11 +286,64 @@
 .form__text-name {
   position: relative;
 
-  margin-top: 9px;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 175px;
+  }
 }
 
-.form__text-name:last-child {
-  margin-bottom: 34px;
+.form__text-name--phone,
+.form__text-name--email {
+  margin-top: -21px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 11px;
+  }
+}
+
+.form__user-name {
+  display: block;
+
+  font-weight: 700;
+  font-size: $font-size-medium;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+
+    font-size: $font-size-big;
+  }
+}
+
+.form__text-name--user-text {
+  padding-top: 4px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .form__text {
@@ -153,8 +355,14 @@
   line-height: 1;
   color: $greyish;
 
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid $black;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
 }
 
 .form__text--phone,
@@ -164,18 +372,19 @@
 
 .form__icon {
   position: absolute;
-  top: 11px;
-  right: 2px;
+  top: 20px;
+  right: 7px;
 
   opacity: 0.2;
-}
 
-.form__text-name:hover .form__icon,
-.form__text-name:active .form__icon {
-  opacity: 1;
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    right: 24px;
+  }
 
-  path {
-    fill: #62d1ba;
+  @media (min-width: $desktop-width) {
+    top: 13px;
+    right: 183px;
   }
 }
 
@@ -192,11 +401,19 @@
 .form__user-text {
   box-sizing: border-box;
   width: 100%;
-  padding: 18px 17px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 21px;
+  padding-left: 15px;
 
   border: 2px solid $black;
 
   resize: none;
+}
+
+.form__text,
+.form__user-text {
+  outline: none;
 }
 
 .form__text::placeholder,
@@ -204,6 +421,10 @@
   font-size: $font-size-medium;
   line-height: 1;
   color: rgba($greyish, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-big;
+  }
 }
 
 .form__text--phone::placeholder {
@@ -217,23 +438,62 @@
 .form__user-text:focus,
 .form__user-text:active {
   border-color: $seafoam;
+
+  transition: 0.1s all;
+}
+
+.form__text:hover + .form__icon,
+.form__text:focus + .form__icon,
+.form__text:active + .form__icon {
+  opacity: 1;
+
+  path {
+    fill: #62d1ba;
+  }
+}
+
+.form__submit {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 6px;
+    padding-bottom: 50px;
+
+    @include container;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
+  }
 }
 
 .form__info {
-  margin-bottom: 31px;
+  margin: 0;
+  margin-bottom: 30px;
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.1;
   color: $greyish;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    font-size: $font-size-medium;
+    line-height: 1.8;
+  }
 }
 
 .form__button {
   width: 100%;
-  padding: 20px 45px;
 
-  font-size: $font-size-medium;
-  line-height: 1;
-
-  background-color: $white;
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: auto;
+  }
 }

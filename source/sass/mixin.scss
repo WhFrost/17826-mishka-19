@@ -1,10 +1,20 @@
 @mixin container($padding: 30px) {
   box-sizing: border-box;
-  max-width: 1150px;
   margin-right: auto;
   margin-left: auto;
   padding-right: $padding;
   padding-left: $padding;
+
+  @media (min-width: $tablet-width) {
+    padding-right: $padding + 22px;
+    padding-left: $padding + 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    padding-right: 50px;
+    padding-left: 225px;
+  }
 }
 
 @mixin list {
