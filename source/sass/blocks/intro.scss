@@ -34,10 +34,11 @@
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
