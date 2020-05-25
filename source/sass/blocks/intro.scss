@@ -35,10 +35,12 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: cover;
+    background-position: 50% -15%;
+    background-size: 575px auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -48,6 +50,8 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
+      background-position: center top;
+      background-size: cover;
     }
   }
 

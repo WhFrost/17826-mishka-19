@@ -54,7 +54,6 @@ navToggle.addEventListener('click', function () {
 var modal = document.querySelector(".modal");
 var buyList = document.querySelectorAll(".buy");
 
-
 if (buyList.length !== 0) {
   Array.from(buyList).forEach(function(buy) {
     buy.addEventListener("click", function() {
